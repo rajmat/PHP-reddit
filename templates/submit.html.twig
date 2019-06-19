@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<h1>Submit a new post</h1>
+<div class="form-group">
+<form action="/save" method="post">
+  <label for="title">Title:</label>
+  <input type="text" name="title" id="tit" placeholder="titli">
+</div>
+<div class="form-group">
+
+  <label for="URL">URL: </label>
+  <input type="text" name="URL" id="url" placeholder="URL comes here">
+</div>
+  <button type="submit">Send</button>
+</form>
+
+{% endblock %}
